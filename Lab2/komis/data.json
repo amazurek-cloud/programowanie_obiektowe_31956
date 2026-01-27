@@ -1,0 +1,14 @@
+[
+  {
+    "$type": "Lab2.Models.Car, komis",
+    "Color": "czerwony",
+    "Model": "Honda",
+    "Year": 2022
+  },
+  {
+    "$type": "Lab2.Models.Bike, komis",
+    "Color": "zolty",
+    "Model": "Kawasaki",
+    "Year": 2023
+  }
+]
