@@ -1,0 +1,70 @@
+<Window x:Class="HomeLibrary.UI.BookDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Szczegóły książki"
+        Height="380"
+        Width="500"
+        WindowStartupLocation="CenterOwner">
+
+    <!-- UI – interfejs użytkownika -->
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Pasek tytułowy -->
+        <Border Background="LightBlue" Padding="10" Grid.Row="0">
+            <TextBlock Text="{Binding TitleText}"
+                       FontSize="22"
+                       FontWeight="Bold"
+                       Foreground="Black"
+                       HorizontalAlignment="Center"/>
+        </Border>
+
+        <!-- Szczegóły książki -->
+        <StackPanel Grid.Row="1" Margin="0,10,0,0">
+
+            <TextBlock Text="Autor:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding AuthorFullName}"/>
+
+            <TextBlock Text="Gatunek:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding Genre}"/>
+
+            <TextBlock Text="Status:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding ReadStatusText}"/>
+
+            <TextBlock Text="Ocena:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding RatingText}"/>
+
+            <TextBlock Text="Komentarz:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding CommentText}" TextWrapping="Wrap"/>
+
+            <TextBlock Text="Data przeczytania:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding DateReadText}"/>
+
+        </StackPanel>
+
+        <!-- Przyciski -->
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="0,10,0,0">
+
+            <Button Content="Edytuj"
+                    Margin="5"
+                    Click="Edit_Click"/>
+
+            <Button Content="Usuń"
+                    Margin="5"
+                    Click="Delete_Click"/>
+
+            <Button Content="Zamknij"
+                    Margin="5"
+                    Click="Close_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

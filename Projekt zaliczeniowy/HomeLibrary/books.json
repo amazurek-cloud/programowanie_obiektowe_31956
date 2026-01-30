@@ -1,0 +1,34 @@
+[
+  {
+    "UserId": "59c39634-438c-4970-b6ba-01b0ad5b5d9a",
+    "AuthorId": "b3115fa0-9749-41af-b791-77a2ad05713d",
+    "Title": "Nuovo Espresso",
+    "AuthorFirstName": "Luciana",
+    "AuthorLastName": "Ziglio",
+    "Genre": 10,
+    "OriginalLanguage": "en",
+    "ReadStatus": 1,
+    "Rating": 5,
+    "Comment": "Praktyczna",
+    "DateRead": "2026-01-27T23:36:49.7024656+01:00",
+    "CopyStatus": 0,
+    "Id": "ca36a148-ede5-47b0-bbf5-31d72220b520",
+    "CreatedAt": "2026-01-22T19:36:22.6891909+01:00"
+  },
+  {
+    "UserId": "93acec02-f9cd-41d8-8603-fe267951f7b0",
+    "AuthorId": "f3f9234a-10b4-4dd5-a5c0-a7785fd8f0f9",
+    "Title": "Slowik",
+    "AuthorFirstName": "Kristin",
+    "AuthorLastName": "Hannah",
+    "Genre": 0,
+    "OriginalLanguage": null,
+    "ReadStatus": 1,
+    "Rating": 5,
+    "Comment": "Najlepsza!",
+    "DateRead": "2026-01-27T23:32:00.9216577+01:00",
+    "CopyStatus": 0,
+    "Id": "be674fe4-089b-41cb-b980-568cdf2034f3",
+    "CreatedAt": "2026-01-27T23:31:46.4550641+01:00"
+  }
+]
